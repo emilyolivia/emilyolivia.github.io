@@ -51,14 +51,14 @@ nav {
 	padding: 20px;
 }
 
-aside {
-	float: right;
+#about > div {
+	float: left;
 	background-color: #FFC675;
 	border: 1px black solid;
-	padding: 20px;
+	padding: 1em;
+	width:66.66%;
 }
 p {
-	font-size: 19px;
 	color: #5E6982;
 	margin: auto;
 	padding: 20px 150px;
@@ -75,9 +75,8 @@ nav a {
 	text-decoration: none;
 	font-weight: 800;
 	text-decoration: none;
-	display: block;
-	float: left;
-	padding: 20px;
+	display: inline-block;
+	padding: 1em;
 }
 
 
@@ -95,11 +94,9 @@ hr {
 
 img.displayed {
 	float: left;
-    display: block;
-    margin: 0 auto;
-    width:260px;
-    padding: 2rem 0;
- }
+	display: block;
+	width:33.33%;
+}
 
 footer {
 	background-color: #FF957E;
