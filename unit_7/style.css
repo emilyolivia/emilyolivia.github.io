@@ -1,4 +1,4 @@
-* { margin:0; padding:0; box-sizing:border-box; }
+* { margin:0; padding:0; box-sizing:border-box;}
 
 body {
 	background-color: #B2B8C4;
@@ -15,8 +15,8 @@ div {
 }
 
 section {
-	background-color:;
-	border: ;
+	/*background-color:;
+	border: ;*/
 	padding: 1em;
 }
 
@@ -60,7 +60,8 @@ ul {
 	font-weight: normal;
 	list-style-type: none;
 	padding: 0; 
-	color: #5E6982 ;
+	color: #5E6982;
+	font-size: 20px;
 }
 
 nav a {
@@ -110,6 +111,7 @@ footer {
 	padding: 0px 0px;
 	font-size: 22px;
 }
+
  .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -161,5 +163,9 @@ footer {
 	border: 1px black solid;
 	padding: 1em;
 	width:66.66%;
+}
+
+#web {
+	margin: auto;
 }
 
