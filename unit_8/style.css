@@ -37,21 +37,29 @@ h1 {
 
 h2 {
 	font-style: italic;
-	font-size: 20px;
+	font-size: 1.2em;
 	color:#5E6982;
+}
+
+label{
+	display:none;
+	font-size: 1.2em;
+	padding: 1em;
+	background-color: #C7B4C2;
+	text-align: center;
 }
 
 nav {
 	background-color: #C7B4C2;
 	border: ;
-	padding: 20px;
+	padding: 1.2em;
 }
 
 p {
 	color: #5E6982;
 	margin: auto;
-	padding: 20px 140px;
-	font-size: 20px
+	padding: 2% 25%;
+	font-size: 1.2em;
 	
 }
 ul { 
@@ -59,12 +67,12 @@ ul {
 	list-style-type: none;
 	padding: 0; 
 	color: #5E6982;
-	font-size: 20px;
+	font-size: 1.2em;
 }
 
 nav a {
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 1.2em;
 	font-weight: 800;
 	text-decoration: none;
 	display: inline-block;
@@ -79,23 +87,25 @@ a:hover {
 	color: #B427FF;
 }
 
-hr {
+/*hr {
 	border: none;
 	background-color: #B427FF; 
 	height: 2px;
 	width: 60px; 
-}
+}*/
+
 
 
 footer {
 	background-color: #C7B4C2;
 	border: ;
-	padding: 20px;
+	padding: 2%;
 }
 
  footer .navlinks{
  	padding: 2rem;
  }
+
  .navlinks {
  	padding: 2rem;
  	color: #7D6CFF; 
@@ -106,8 +116,8 @@ footer {
  }
  .second-quote {
 	margin: auto;
-	padding: 0px 0px;
-	font-size: 22px;
+	padding: 0;
+	font-size: 1.3em;
 }
 
  .clearfix:after {
@@ -134,25 +144,29 @@ footer {
 	filter: contrast(75%);
 }
 
+#check{
+	display:none;
+}
+
 #wrapper {
 	background-color: #E7EDBD;
-	width:65em;
+	width:75%;
 	margin: 0 auto;
 }
 
 #two_column {
 	background-color: ;
 	border: ;
-	padding: 20px 100px;
+	padding: 2% 5%;
 }
 
 #right {
 	background-color: ;
 	border: ;
-	padding: 20px;
+	padding: 2%;
 	float: right;
 	width: 62%;
-	margin-top: 185px;
+	margin-top: 25%;
 }
 
 #about > div {
@@ -167,3 +181,56 @@ footer {
 	margin: auto;
 }
 
+@media only screen and (max-width: 1334px){
+	label {
+		display: block;
+	}
+
+	nav {
+		display:none;
+	}
+
+	#check:checked + nav{
+		display: block;
+	}
+}
+
+@media only screen and (max-width:1160px){
+	body {
+		font-size: 15px;
+	}
+
+	p {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width:952px){
+	
+	.displayed {
+		float:none;
+		display: block;
+		margin: auto;
+		padding: 0;
+		text-align: center; 
+	}
+
+	#right {
+		float: none;
+		text-align: center;
+		display:block;
+		padding: 1em;
+		margin: auto;
+		border: none;
+	}
+}
+
+@media only screen and (max-width:558px){
+	#right {
+		float: none;
+		text-align: center;
+		display:block;
+		padding: 0;
+		margin: auto;
+		border: none;
+	}
