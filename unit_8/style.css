@@ -87,15 +87,6 @@ a:hover {
 	color: #B427FF;
 }
 
-/*hr {
-	border: none;
-	background-color: #B427FF; 
-	height: 2px;
-	width: 60px; 
-}*/
-
-
-
 footer {
 	background-color: #C7B4C2;
 	border: ;
@@ -111,7 +102,6 @@ footer {
  	color: #7D6CFF; 
 	text-decoration: none;
 	font-weight: 800;
-	text-decoration: none;
 	display: inline-block;
  }
  .second-quote {
