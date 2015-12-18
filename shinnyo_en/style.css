@@ -1,39 +1,52 @@
 * { margin:0; padding:0; box-sizing:border-box;}
 
 body {
-	background-color: #e6c200;
+	background-color: #DECCB8;
 	font-size: 18px;
-	text-align: center;
 	color: black; 
-	font-family: 'Noto Serif', serif;
+	
+}
+
+article {	
+	width: 60%;
+	padding: 2em;
+	margin:auto;
 }
 
 header {
-	position: relative;
+	/*position: relative;*/
+}
+
+label {
+	display: none;
+	text-align: center; 
+	background-color: #BAB4B8;
+	padding: 1em 3em;
+	text-decoration: none;
+	font-weight: 300; 
+	color: black;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 nav {
 	background-color: #BAB4B8;
 	margin: auto;
+	text-align: center;
 }
 
-label {
-	display: none;
-}
 
 p {
 	line-height: 1.5em; 
-	text-align: justify;
+	text-align: left;
+	margin: auto;
+	font-family: 'Playfair Display', serif;
 }
 
 footer {
 	background-color: #BAB4B8;
-}
-
-article {	
-	width: 55%;
-	padding: 2em;
-	margin:auto;
+	text-align: center;
 }
 
 
@@ -47,24 +60,13 @@ a:hover
 		background-color: transparent;
 		text-decoration: none}
 
- .clearfix:after {
-	visibility: hidden;
-	display: block;
-	content: ".";
-	clear: both;
-	height: 0;
-	font-size: 0;
-}
-
-.navlinks {
-	text-decoration: none;
-	font-weight: 300; 
-	color: black;
-	font-size: 1.1em;
-	text-transform: uppercase;
-	font-family: "Open Sans", Helvetica, sans-serif;
-	padding: 1em 2em;
-	display: inline-block;
+ .clearfix:after{
+ 	visibility: hidden;
+ 	display: block;
+ 	content: ".";
+ 	clear: both;
+ 	height: 0;
+ 	font-size: 0;
 }
 
 .generaldescrip {
@@ -80,58 +82,73 @@ a:hover
  	text-align: center;
  }
 
-#hero {
- 	content: url('images/shinnyoflowers.png');
- 	width: 75%;
- 	margin-left: auto;
- 	margin-right: auto;
- 	margin-top: 300px;
- }
+ .contact {
+ text-decoration: underline;
+	font-weight: 300; 
+	color: black;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	padding: .2em;
+	display: inline-block;
+	 }
+
+.navlinks {
+	text-decoration: none;
+	font-weight: 300; 
+	color: black;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	padding: 1em 2em;
+	display: inline-block;
+}
 
 #check{
 	display:none;
 }
 
-#wrapper {
-	background-color: #C74C05;
-	width:75%;
-	margin: 0 auto;
-	position: relative;
-	overflow: auto;
-}
-
-#logo {
-	content: url('images/logo-small.png');
-	width:20%;
-	float: left;
-	display: block;
-	position: relative;
-	height: 10em;
-}
-
 #district {
-	content: url('images/washdcskyline.png');
-	position: relative;
+	background: url('images/washdcskyline.png') no-repeat center center scroll;
+	/*position: relative;*/
 	width: 80%;
 	height: 10em;
 }
 
 #header_wrapper {
 	position: fixed;
-	width: 75%;
+	width: 80%;
+}
+
+#hero {
+ 	background: url('images/shinnyoflowers.png') no-repeat center center scroll;
+ 	width: 70%;
+ 	height: 350px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	padding-top: 1000px;
+ }
+
+ #logo {
+	content: url('images/logo-small.png');
+	width:20%;
+	float: left;
+	display: block;
+	/*position: relative;*/
+	height: 10em;
+}
+
+#wrapper {
+	background-color: #DE996A;
+	width:80%;
+	margin: 0 auto;
+	/*position: relative;
+	overflow: auto;*/
 }
 
 @media only screen and (max-width: 1362px){
 	label {
 		display: block;
-		background-color: #BAB4B8;
-		padding: 1em 3em;
-		text-decoration: none;
-		font-weight: 300; 
-		color: black;
-		font-size: 1.1em;
-		text-transform: uppercase;
-		font-family: "Open Sans", Helvetica, sans-serif;
 	}
 
 	a:visited
@@ -146,6 +163,10 @@ a:hover
 
 	nav {
 		display:none;
+	}
+
+	.navlinks {
+		display: block;
 	}
 
 	#check:checked + nav{
@@ -166,53 +187,76 @@ a:hover
 	}
 }
 
+
 @media only screen and (max-width:980px) {
+	/*html, body {
+		height: 100%;
+	}*/
+
+	/*body{
+		
+	}*/
+
+	footer { 
+		position: absolute;
+		bottom: 0;
+		width:100%;
+	}
+
+	footer .navlinks{
+		display: inline-block;
+	}
+
+	article{
+		padding-top:275px;
+	}
+
 	#wrapper {
 		width: 100%;
-		overflow: hidden;
+		/*position: relative;*/
+		/*padding-top: 100px;*/
+		/*overflow: hidden;*/
 	}
 
 	#header_wrapper {
-			position: relative;
+			/*position: relative;*/
 			width: 100%;
 		}
 
 	#hero {
 			display:none;
 		}
-	}
 	.generaldescrip:first-of-type {
-		top-margin: 200px;
+		/*margin-top: 200px;*/
 	}
 
 
-	footer { 
-		bottom: 0 !important;
-	}
+}
 
-		}
+@media only screen and (max-width:970px) {
+	html, body {
+		/*height: 100%;*/
+	}
 
 	article {
-		width: 60%;
+		width: 50%;
+		padding-bottom: 15em;
 	}
 
+	#wrapper{
+		position: relative;
 	}
+}  
 
 @media only screen and (max-width:855px) {
 
-		article {
+		/*article {
 			display: block;
-		}
+		}*/
 
 		#header_wrapper {
-			position: relative;
+			/*position: relative;*/
 			width: 100%;
-		}
-
-		footer { 
-		position: absolute;
-		bottom: 0;
-
 		}
 
 	}
@@ -225,6 +269,8 @@ a:hover
 		#logo {
 			display:none;
 		}
+
+	}
 
 
 @media only screen and (max-width:578px) {
@@ -239,7 +285,6 @@ a:hover
 
 }
 
-
 @media only screen and (max-width:505px) {
 		footer.navlinks {
 			font-size: 1em;
@@ -251,4 +296,5 @@ a:hover
 			display:none;
 
 	}
+}
 
