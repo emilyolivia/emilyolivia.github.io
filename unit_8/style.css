@@ -53,6 +53,7 @@ nav {
 	background-color: #C7B4C2;
 	border: ;
 	padding: 1.2em;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 p {
@@ -151,12 +152,14 @@ footer {
 }
 
 #right {
-	background-color: ;
-	border: ;
-	padding: 2%;
 	float: right;
 	width: 62%;
 	margin-top: 25%;
+	font-size: 18px;
+	line-height: 1.5em;
+	text-align: center;
+	font-style: italic;
+	padding: 1em 10% 2.5em'
 }
 
 #about > div {
